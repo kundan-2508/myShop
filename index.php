@@ -177,7 +177,7 @@ include_once "captions/captions.php";
 						<label for=""><?php echo netWeight;?> :</label>
 					</div>
 					<div class="col-sm-2 col-md-2 col-lg-2">
-						<input type="text" name="netWeight" id = "netWeight" class="form-control">
+						<input type="text" name="netWeight" id = "netWeight" class="form-control" readonly="true">
 					</div>
 				</div>
 				<br>
@@ -200,16 +200,5 @@ include_once "captions/captions.php";
 	</div>
 
 </form>
-<div class="container" style="display: none;">
-	<div class="row">
-		<div class="col-sm-4 col-md-4 col-lg-4"></div>
-		<div class="col-sm-4 col-md-4 col-lg-4">
-			<input type="submit" id="printMe" class="btn btn-primary form-control" value="<?php echo printReciept; ?>"
-			onclick="printReciept('printableArea')">
-		</div>
-		<div class="col-sm-4 col-md-4 col-lg-4"></div>
-	</div>
-</div>
-
 </body>
 </html>
